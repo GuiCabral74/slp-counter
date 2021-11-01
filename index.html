@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.ico">
+    <title>Contador AXIE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+
+        <h1>Marcador <em>PVP</em> AXIE <img class="imageSlp" src="imgs/slp.png" alt="Slp"> </h1>
+        <div class="marcadores">
+            <div class="win">
+                <label for="vitorias">Vitorias:</label>
+                <span id="quantidadeVitorias"></span>
+                <button class="btnI" id="up1" onclick="acrescentar()">&#8593</button>
+                <button class="btnI" id="down1" onclick="subtrair()">&#8595</button>
+            </div>
+            <div class="lose">
+                <label for="derrotas">Derrotas:</label>
+                <span id="quantidadeDerrotas"></span>
+                <button class="btnI" id="up2" onclick="acrescentar2()">&#8593</button>
+                <button class="btnI" id="down2" onclick="subtrair2()">&#8595</button>
+            </div>
+        </div>
+
+        <div class="splInicial">
+            <label for="init">Quantidade de SLP inicial:</label>
+            <input id="init" type="number">
+        </div>
+
+        <div class="splFinal">
+            <label for="final">Quantidade de SLP final:</label>
+            <input id="final" type="number">
+        </div>
+        <div class="descontarDiaria">
+            <label for="descontar">Descontar 75 diario?</label>
+            <select id="descontar">
+                <option value="1">Não</option>
+                <option value="2">Sim</option>
+            </select>
+        </div>
+
+        <button class="btnCalc" id="calcular">Calcular SLP</button>
+
+        <div class="resultado">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

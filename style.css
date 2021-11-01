@@ -1,0 +1,45 @@
+body {
+    background-color: #1957A7;
+    display: flex;
+    justify-content: center;
+    height: 900px;
+}
+
+.container {
+    background-color: #FBA757;
+    margin: auto 0;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.win, .lose, .splInicial, .splFinal {
+    margin-bottom: 7px;
+}
+
+.btnI:nth-child(2n + 1) {
+    margin-left: 5px;
+
+}
+.btnI {
+    border-radius: 20%;
+    padding: 5px 10px;
+    border: 1px solid black ;
+}
+.btnCalc {
+    border-radius: 5px;
+    border: 1px solid black ;
+    margin: 15px 150px 0 150px;
+    padding: 5px 8px;
+}
+
+.imageSlp {
+    width: 30px;
+}
+
+.resultado {
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
